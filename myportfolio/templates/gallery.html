@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Image Gallery</title>
+     {% load static %}
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+    <h1>My Image Gallery</h1>
+
+
+
+    <div class="Gallery">
+        <div class="image">
+            <img src="{% static 'image1.jpeg' %}">
+            <p>Cybertruck</p>
+        </div>
+        <div class="image">
+            <img src="{% static 'image2.jpg' %}">
+            <p>A city skyline night</p>
+        </div>
+        <div class="image">
+            <img src="{% static 'image3.webp' %}">
+            <p>A forest pathway</p>
+        </div>
+
+        <a href="{% url 'contact' %}"></a>
+
+    </div>
+
+    
+    
+</body>
+</html>
